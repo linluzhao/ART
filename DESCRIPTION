@@ -1,0 +1,18 @@
+Package: ART
+Type: Package
+Title: Angular-Radial t-SNE
+Version: 0.1.0
+Authors@R: c(
+    person("Linlu", "Zhao", email = "zllexeter@gmail.com", role = c("aut", "cre", "cph")),
+    person("Laurens", "van der Maaten", role = "cph", comment = "Author of original t-SNE code"),
+    person("Jesse", "Krijthe", role = "ctb", comment = "Author of Rtsne"))
+Description: Angular-Radial t-distributed Stochastic Neighbour Embedding (ART) splits each
+    observation into a direction and a magnitude. Then it uses a von Mises-Fisher kernel on
+    the direction and a Gaussian kernel on the magnitude, and combines the two as a product of
+    experts with an adjustable weight. Comparing the ART embeddings at different weights can
+    help determine whether the separation of clusters comes from direction, magnitude, or a
+    combination of the two.
+License: file LICENSE
+Encoding: UTF-8
+Imports: Rcpp
+LinkingTo: Rcpp

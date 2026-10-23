@@ -1,0 +1,5 @@
+useDynLib(ART, .registration = TRUE)
+importFrom(Rcpp, evalCpp)
+importFrom(stats, rnorm)
+export(art_decompose, shared_start, art_prepare, fuse, procrustes_onto, align_to_first, art_frame, art_path)
+export(art_squared_distance, art_search_beta, art_fuse, art_layout)
